@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <a href="#hero" class="text-lg font-bold tracking-wide">Your Name</a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="flex flex-wrap items-center gap-4 text-sm">
+          <li><a class="transition hover:text-cyan-300" href="#about">About</a></li>
+          <li><a class="transition hover:text-cyan-300" href="#skills">Skills</a></li>
+          <li><a class="transition hover:text-cyan-300" href="#projects">Projects</a></li>
+          <li><a class="transition hover:text-cyan-300" href="#github">GitHub</a></li>
+          <li><a class="transition hover:text-cyan-300" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="border-b border-white/10">
+      <div class="mx-auto grid min-h-[70vh] max-w-6xl items-center gap-10 px-4 py-20 md:grid-cols-2">
+        <div class="space-y-6">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">PROG2700 Portfolio</p>
+          <h1 class="text-4xl font-black tracking-tight md:text-6xl">
+            Hi, I’m <span class="text-cyan-300">Your Name</span>
+          </h1>
+          <p class="max-w-xl text-lg leading-8 text-slate-300">
+            I build client-side web applications using JavaScript, APIs, and modern CSS workflows.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#projects" class="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300">
+              View Projects
+            </a>
+            <a href="#contact" class="rounded-xl border border-white/15 px-5 py-3 font-semibold transition hover:border-cyan-300 hover:text-cyan-300">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl">
+          <div class="aspect-[4/3] rounded-2xl border border-dashed border-white/15 bg-slate-900/70 grid place-items-center text-slate-400">
+            Profile Image / Intro Graphic Placeholder
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="border-b border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-20">
+        <div class="mb-10 max-w-2xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">About Me</p>
+          <h2 class="text-3xl font-bold md:text-4xl">Who I am and where I’m headed</h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Bio</h3>
+            <p class="leading-8 text-slate-300">
+              Write a short professional biography here. Explain your interests, your program, and the type of work you want to do.
+            </p>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Career Goals</h3>
+            <p class="leading-8 text-slate-300">
+              Describe the direction you want your career to take and the technical areas you want to continue developing.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="border-b border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-20">
+        <div class="mb-10 max-w-2xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Skills</p>
+          <h2 class="text-3xl font-bold md:text-4xl">Languages, tools, and technologies</h2>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Languages</h3>
+            <div id="skills-languages" class="flex flex-wrap gap-2">
+              <!-- Render language skill pills here -->
+            </div>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Tools</h3>
+            <div id="skills-tools" class="flex flex-wrap gap-2">
+              <!-- Render tool skill pills here -->
+            </div>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Technologies</h3>
+            <div id="skills-technologies" class="flex flex-wrap gap-2">
+              <!-- Render technology skill pills here -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="border-b border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-20">
+        <div class="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div class="max-w-2xl">
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Projects</p>
+            <h2 class="text-3xl font-bold md:text-4xl">Featured work</h2>
+          </div>
+
+          <div class="flex flex-wrap gap-3">
+            <input
+              id="project-search"
+              type="search"
+              placeholder="Search projects..."
+              class="rounded-xl border border-white/10 bg-slate-900 px-4 py-3 text-sm outline-none ring-0 placeholder:text-slate-500 focus:border-cyan-300"
+            />
+            <button id="filter-all" class="rounded-xl border border-white/10 px-4 py-3 text-sm font-medium transition hover:border-cyan-300 hover:text-cyan-300">
+              All
+            </button>
+            <button id="filter-js" class="rounded-xl border border-white/10 px-4 py-3 text-sm font-medium transition hover:border-cyan-300 hover:text-cyan-300">
+              JavaScript
+            </button>
+          </div>
+        </div>
+
+        <div id="projects-grid" class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <!-- Render project cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- API Section -->
+    <section id="github" class="border-b border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-20">
+        <div class="mb-10 max-w-2xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">GitHub API</p>
+          <h2 class="text-3xl font-bold md:text-4xl">Live repository data</h2>
+          <p class="mt-4 leading-8 text-slate-300">
+            This section should display real data retrieved from the GitHub API.
+          </p>
+        </div>
+
+        <div id="github-status" class="mb-6 rounded-2xl border border-white/10 bg-white/5 p-4 text-slate-300">
+          Loading state / status message placeholder
+        </div>
+
+        <div id="github-grid" class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <!-- Render GitHub repo cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="border-b border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-20">
+        <div class="mb-10 max-w-2xl">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Contact</p>
+          <h2 class="text-3xl font-bold md:text-4xl">Get in touch</h2>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Contact Information</h3>
+            <ul class="space-y-3 text-slate-300">
+              <li>Email: your-email@example.com</li>
+              <li>GitHub: github.com/your-username</li>
+              <li>LinkedIn or other professional link</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Professional Note</h3>
+            <p class="leading-8 text-slate-300">
+              Keep your public contact details appropriate for a professional audience. Do not post private or sensitive information.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8">
+    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+      <p>© 2026 Your Name. Built with JavaScript, Tailwind CSS v4, and GitHub Pages.</p>
+      <p>PROG2700 MP3 / Final Portfolio</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
