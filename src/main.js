@@ -30,6 +30,13 @@ const projects = [
     category: "JavaScript",
     url: "#",
   },
+  {
+    title: "Web ",
+    description: "A professional portfolio built as a dynamic client-side application.",
+    tech: ["JavaScript", "Tailwind", "GitHub Pages"],
+    category: "JavaScript",
+    url: "#",
+  },
 ];
 
 const state = {
@@ -42,7 +49,7 @@ const state = {
 function createSkillPill(text) {
   const span = document.createElement("span");
   span.className =
-    "rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-sm text-cyan-200";
+    "rounded-full border border-red-400/20 bg-red-400/10 px-3 py-1 text-sm text-red-400";
   span.textContent = text;
   return span;
 }
@@ -112,7 +119,7 @@ function renderProjects() {
           )
           .join("")}
       </div>
-      <a class="font-medium text-cyan-300 transition hover:text-cyan-200" href="${project.url}">
+      <a class="font-medium text-red-600 transition hover:text-red-500" href="${project.url}">
         View Project
       </a>
     `;
@@ -157,7 +164,7 @@ function renderRepos() {
       <h3 class="mb-3 text-xl font-semibold">${repo.name}</h3>
       <p class="mb-4 leading-7 text-slate-300">${repo.description ?? "No description provided."}</p>
       <p class="mb-4 text-sm text-slate-400">Language: ${repo.language ?? "Not specified"}</p>
-      <a class="font-medium text-cyan-300 transition hover:text-cyan-200" href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
+      <a class="font-medium text-red-600 transition hover:text-red-500" href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
         View Repository
       </a>
     `;
@@ -217,7 +224,7 @@ function init() {
   wireEvents();
 
   // Replace with your actual GitHub username
-  loadRepos("your-github-username");
+  loadRepos("WalkerGould");
 }
 
 init();
