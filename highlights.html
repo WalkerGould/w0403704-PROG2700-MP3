@@ -13,12 +13,12 @@
 
       <nav aria-label="Primary navigation">
         <ul class="flex flex-wrap items-center gap-4 text-sm">
-          <li><a class="transition hover:text-red-500" href="./highlights.html">Highlights</a></li>
-          <li><a class="transition hover:text-red-500" href="#about">About</a></li>
-          <li><a class="transition hover:text-red-500" href="#skills">Skills</a></li>
-          <li><a class="transition hover:text-red-500" href="#projects">Projects</a></li>
-          <li><a class="transition hover:text-red-500" href="#github">GitHub</a></li>
-          <li><a class="transition hover:text-red-500" href="#contact">Contact</a></li>
+          <li><a class="transition hover:text-red-500" href="#highlights">Highlights</a></li>
+          <li><a class="transition hover:text-red-500" href="./index.html#About">About</a></li>
+          <li><a class="transition hover:text-red-500" href="./index.html#Skills">Skills</a></li>
+          <li><a class="transition hover:text-red-500" href="./index.html#projects">Projects</a></li>
+          <li><a class="transition hover:text-red-500" href="./index.html#github">GitHub</a></li>
+          <li><a class="transition hover:text-red-500" href="./index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -48,14 +48,14 @@
 
         <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl">
           <div class="aspect-[4/3] rounded-2xl border border-dashed border-white/15 bg-slate-900/70 grid place-items-center text-slate-400">
-            <img src="./src/assets/linkedin5.PNG">
+            <img src="./src/assets/javascript.svg">
             Profile Image / Intro Graphic Placeholder
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Highlights section -->
     <section id="about" class="border-b border-white/10">
       <div class="mx-auto max-w-6xl px-4 py-20">
         <div class="mb-10 max-w-2xl">
@@ -64,7 +64,63 @@
         </div>
 
         <div class="grid gap-8 md:grid-cols-2">
+
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Lua script program - Pack registrations for record-keeping, traceability, and product packing and shipping</h3>
+            <p class="leading-8 text-slate-300">
+              <img src="./src/assets/luascript4.png">
+              <img src="./src/assets/Excel-Lua.png">
+
+            </p>
+          </article>
+
           <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Lua script program - Pack registrations for record-keeping, traceability, and product packing and shipping</h3>
+            <p class="leading-8 text-slate-300">
+
+              I never got to finish this program but it was being developed as an alternate to manual pack registrations when the main production system went down and
+              eventually, I would have developed it further to replace a fully functioning weighing system and pack registration system and software.
+              The idea behind this would of been that it could work offline, meaning without any sort of internet access.
+              Here is an example of a more recent version showing product code numbers. This easily exports into excel.
+              <img src="./src/assets/excel-lua2.png">
+              
+            </p>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Custom product labels fully functioning for industrial printers</h3>
+            <p class="leading-8 text-slate-300">
+              These labels are able to be scanned by barcode scanners to extract all the information out of them, even things such as time packed.
+              <img src="./src/assets/customlabels.jpg">
+              Another example of the labels that I made. These labels that I made actually passed Canadian Food Inspection Agency audits.
+              <img src="./src/assets/customlabels2.jpg">
+              Here is an example of the type of printers that I was working with and programming that supported a variety of different printer languages.
+              <img src="./src/assets/configuring-printer.jpg">
+              I daisy chained power cords for several different electronics for a packing station using scale, weight indicator and printer each with it's own power cord. It's so that I can use one cord for the whole setup
+              and I included a switch so I wouldn't have to run multiple ethernet cords.
+              <img src="./src/assets/printer-switch.jpg">
+              Here is what the packing station looks like. Notice that there's four labels on the screen. I typically set the packing stations to the ones that are being used
+              at that exact moment or day so there's less human error. For example, if one packing station only packed one type of product, that's the only product label option it would show.
+              I programmed it to use weight limits as well, and specific preset tares, which all reduce user errors. It prompts you on the screen what went wrong.
+              <img src="./src/assets/packingstation-example.jpg">
+              Programmning the weight indicators. I wired up different weight indicators and scales and programmed them, some without any computer 'screens' like the one shown above.
+              I had to calibrate the weights and the inspections passed by scale technician that works with Measurement Canada.
+              <img src="./src/assets/weightindicator.jpg">
+              <img src="./src/assets/weightindicator2.jpg">
+              <img src="./src/assets/weightindicator3.jpg">
+            </p>
+          
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="mb-4 text-xl font-semibold">Custom product labels fully functioning for industrial printers</h3>
+            <p class="leading-8 text-slate-300">
+              Information Technology graduate from Nova Scotia Community College - Strait Area. I do programming and game development for fun on my free time. Experience
+              working with software and hardware related to IT. I like learning and problem-solving.
+            </p>
+          </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
             <h3 class="mb-4 text-xl font-semibold">Bio</h3>
             <p class="leading-8 text-slate-300">
               Information Technology graduate from Nova Scotia Community College - Strait Area. I do programming and game development for fun on my free time. Experience
@@ -72,15 +128,6 @@
             </p>
           </article>
 
-          <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h3 class="mb-4 text-xl font-semibold">Career Goals</h3>
-            <p class="leading-8 text-slate-300">
-              I would like to develop my programming skills even further, learning more languages for different hardware architectures
-               and just learning more about programming in general. I would like to do full-stack development as a career, or programming, network or databases.
-              That isn't my sole focus, however. I do enjoy IT in general. I can see myself doing a wide variety of IT related tasks in the workplace.
-
-            </p>
-          </article>
         </div>
       </div>
     </section>
