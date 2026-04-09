@@ -3,14 +3,16 @@ import javascriptLogo from './assets/javascript.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { setupCounter } from './counter.js'
-import "./style.css";
 
 import "./style.css";
 
 const skills = {
-  languages: ["JavaScript", "HTML", "CSS"],
-  tools: ["VS Code", "Git", "GitHub"],
-  technologies: ["Tailwind CSS", "APIs", "GitHub Pages"],
+  languages: ["Python", "JavaScript", "HTML", "CSS", "Lua script", "PowerShell", "Java", "Printer languages", "Mermaid", "SQL and more"],
+  tools: ["VS Code", "Git", "GitHub", "Figma", "Valve Hammer Editor", "BlockBench", "WSL"],
+  technologies: ["Tailwind CSS", "APIs", "GitHub Pages", "Django", "PGAdmin", "PostgresSQL", "Docker", "GNS3", "VMware", "Active Directory", "Linux", "VPS", "Dovecot", "Postfix", "Dnsmasq", "Thunderbird", "ITSM - GLPI", "Apache", "MariaDB", "PHP", "Suricata", "Evebox",],
+  training: ["Networking & Security", "System Administration", "OS", "Database", "Web Development & Design", "Full-stack development", "Application development", "Hardware and servers", "Procedural programming", "Object-orientated programming", "Agile", "Game development", "Scripting", "Windows Security", "Data-driven applications", "Transactional database"],
+  focus: ["Programming", "Applications", "Printer languages and design", "Hardware", "Responsive, accessible and dynamic web design and development", "Full-stack", "Networking and Security", "System Administration", "Game development"],
+  hardware: ["Industrial, commerical and enterprise label printers", "Setting up scales and weight indicators and programming indicators", "Setting up and programming grader machines", "Replacing hardware parts", "Cable management", "Creating custom printing labels with barcodes", "Repairing hardware and phones"]
 };
 
 const projects = [
@@ -28,6 +30,13 @@ const projects = [
     category: "JavaScript",
     url: "#",
   },
+  {
+    title: "Web ",
+    description: "A professional portfolio built as a dynamic client-side application.",
+    tech: ["JavaScript", "Tailwind", "GitHub Pages"],
+    category: "JavaScript",
+    url: "#",
+  },
 ];
 
 const state = {
@@ -40,7 +49,7 @@ const state = {
 function createSkillPill(text) {
   const span = document.createElement("span");
   span.className =
-    "rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-sm text-cyan-200";
+    "rounded-full border border-red-400/20 bg-red-400/10 px-3 py-1 text-sm text-red-400";
   span.textContent = text;
   return span;
 }
@@ -49,14 +58,23 @@ function renderSkills() {
   const languageContainer = document.getElementById("skills-languages");
   const toolContainer = document.getElementById("skills-tools");
   const techContainer = document.getElementById("skills-technologies");
+  const trainingContainer = document.getElementById("skills-training");
+  const focusContainer = document.getElementById("skills-focus");
+  const hardwareContainer = document.getElementById("skills-hardware");
 
   languageContainer.innerHTML = "";
   toolContainer.innerHTML = "";
   techContainer.innerHTML = "";
+  trainingContainer.innerHTML = "";
+  focusContainer.innerHTML = "";
+  hardwareContainer.innerHTML = "";
 
   skills.languages.forEach((item) => languageContainer.appendChild(createSkillPill(item)));
   skills.tools.forEach((item) => toolContainer.appendChild(createSkillPill(item)));
   skills.technologies.forEach((item) => techContainer.appendChild(createSkillPill(item)));
+  skills.training.forEach((item) => trainingContainer.appendChild(createSkillPill(item)));
+  skills.focus.forEach((item) => focusContainer.appendChild(createSkillPill(item)));
+  skills.hardware.forEach((item) => hardwareContainer.appendChild(createSkillPill(item)));
 }
 
 function getFilteredProjects() {
@@ -101,7 +119,7 @@ function renderProjects() {
           )
           .join("")}
       </div>
-      <a class="font-medium text-cyan-300 transition hover:text-cyan-200" href="${project.url}">
+      <a class="font-medium text-red-600 transition hover:text-red-500" href="${project.url}">
         View Project
       </a>
     `;
@@ -146,7 +164,7 @@ function renderRepos() {
       <h3 class="mb-3 text-xl font-semibold">${repo.name}</h3>
       <p class="mb-4 leading-7 text-slate-300">${repo.description ?? "No description provided."}</p>
       <p class="mb-4 text-sm text-slate-400">Language: ${repo.language ?? "Not specified"}</p>
-      <a class="font-medium text-cyan-300 transition hover:text-cyan-200" href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
+      <a class="font-medium text-red-600 transition hover:text-red-500" href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
         View Repository
       </a>
     `;
@@ -206,7 +224,7 @@ function init() {
   wireEvents();
 
   // Replace with your actual GitHub username
-  loadRepos("your-github-username");
+  loadRepos("WalkerGould");
 }
 
 init();
