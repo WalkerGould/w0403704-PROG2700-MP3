@@ -30,7 +30,13 @@ const projects = [
     category: "JavaScript",
     url: "#",
   },
-
+  {
+    title: "Github Pages",
+    description: "Deployment of Vite website via Github Pages.",
+    tech: ["JavaScript", "Tailwind", "GitHub Pages"],
+    category: "JavaScript",
+    url: "#",
+  },
 ];
 
 const state = {
