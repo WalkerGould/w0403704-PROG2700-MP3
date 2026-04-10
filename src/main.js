@@ -30,13 +30,7 @@ const projects = [
     category: "JavaScript",
     url: "#",
   },
-  {
-    title: "Web ",
-    description: "A professional portfolio built as a dynamic client-side application.",
-    tech: ["JavaScript", "Tailwind", "GitHub Pages"],
-    category: "JavaScript",
-    url: "#",
-  },
+
 ];
 
 const state = {
